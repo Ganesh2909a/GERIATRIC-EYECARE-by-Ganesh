@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://use.fontawesome.com/f59bcd8580.js"></script>
+    <style>
+        body {
+            background: #c9ccd1;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container-fluid {
+            height: 100%;
+            padding: 0;
+        }
+        .row {
+            height: 100%;
+            margin: 0;
+        }
+        .col-md-6 {
+            padding: 0;
+        }
+        .img-fluid {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        .form-style {
+            max-width: 500px;
+            width: 100%; /* Ensure form container width adjusts */
+            margin: auto;
+            text-align: center; /* Center text inside the form container */
+        }
+        .form-style input {
+            border: 0;
+            height: 50px;
+            border-radius: 0;
+            border-bottom: 1px solid #ebebeb;
+            width: 100%; /* Width set to 300% as per your requirement */
+            margin-bottom: 1rem; /* Space below the input fields */
+        }
+        .form-style input:focus {
+            border-bottom: 1px solid #007bff;
+            box-shadow: none;
+            outline: 0;
+            background-color: #ebebeb;
+        }
+        .form-style label {
+            font-weight: bold;
+            display: block;
+            text-align: left; /* Align labels to the left */
+        }
+        .sideline {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #ccc;
+        }
+        button {
+            height: 50px;
+        }
+        .sideline:before,
+        .sideline:after {
+            content: '';
+            border-top: 1px solid #ebebeb;
+            margin: 0 20px;
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid d-flex">
+        <div class="row no-gutters flex-grow-1">
+            <div class="col-md-6 d-none d-md-block">
+                <img src="https://khimich.dev/projects/optikknopik/user/pages/06.kontakt/hero.jpg" class="img-fluid" />
+            </div>
+            <div class="col-md-6 bg-white d-flex flex-column justify-content-center align-items-center p-5">
+                <div class="form-style">
+                    <h3 class="pb-3" style="color: #8A2BE2;">GERIATRIC EYECARE</h3>
+                    <form>
+                        <div class="form-group pb-3">    
+                            <label for="userId">User ID</label>
+                            <input type="text" placeholder="Enter your User ID" class="form-control" id="userId">
+                        </div>
+                        <div class="form-group pb-3">   
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Enter your Password" class="form-control" id="password">
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div><a href="#">Forget Password?</a></div>
+                        </div>
+                        <div class="pb-2">
+                            <button type="submit" class="btn btn-dark w-100 font-weight-bold mt-2">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
